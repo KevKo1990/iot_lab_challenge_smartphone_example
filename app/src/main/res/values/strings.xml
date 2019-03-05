@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">CAN Signal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">© 2019</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_text">This is the example App for accessing the CAN bus signals. Check the navigation menu for UI examples.</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_rest">Pull via REST API</string>
+    <string name="nav_websocket">Push via websocket</string>
+
+    <string name="hello_blank_fragment">Blank fragment</string>
+
+    <string name="text_connection_problem">
+        No connection to the box possible.\nOther menu points only available if connection exists.
+    </string>
+    <string name="text_connected">Box is connected</string>
+    <string name="text_not_connected">Box is not connected</string>
+    <string name="alen_box">ALEN</string>
+    <string name="connection_status">Connection status</string>
+    <string name="text_connection_errors">
+        If the phone is not able to connect to the box, you can try: \n
+        a) Check if you are connected with the same WiFi as the box \n
+        b) Restart the box, maybe is the web server crashed \n
+        c) Ask us
+    </string>
+    <string name="text_information">
+        This app is especially written for the START Hack 2019 in St. Gallen.
+        \nIt shows examples for the usage of the ALEN REST API and websocket connections. Open the menu to check both out!
+        \n\nHappy coding with the Bosch IoT Lab challenge!
+    </string>
+
+    <string name="text_sensor_name_dropdown">Selected sensor:</string>
+    <string name="text_sensor_name_fail">Failure loading sensor names</string>
+    <string name="text_single_call">Make single GET request</string>
+    <string name="button_play">Play</string>
+    <string name="button_stop">Stop</string>
+
+    <string name="text_query_error">Request unsuccessful</string>
+    <string name="text_parsing_error">Request delivered no valid data</string>
+
+    <string name="text_interval">Set data interval (in ms):</string>
+    <string name="text_hint_interval">Choose interval</string>
+    <string name="text_sync">Run interval:</string>
+    <string name="text_website_information">
+        Questions concerning the app: kevin.koch@unisg.ch
+        \n\nFind more information about us: iot-lab.ch
+    </string>
+    <string name="image_iot_lab_logo">IoT lab logo</string>
+    <string name="image_start_hack_logo">START Hack logo</string>
+    <string name="text_information_headline">Further information:</string>
+
+    <string name="chart_description">Values over time (in sec)</string>
+
+    <string name="text_log_title">Websocket new values log</string>
+    <string name="text_log_header1">Timestamp</string>
+    <string name="text_log_header2">Values</string>
+    <string name="text_no_values">No values yet.</string>
+    <string name="text_received_web_socket">New websocket message</string>
+    <string name="text_no_values_changed">No changed values</string>
+    <string name="start_sync">Sync started</string>
+    <string name="stop_sync">Sync stopped</string>
+    <string name="websocket_activity">Websocket</string>
+    <string name="REST_screen">REST</string>
+    <string name="websocket_screen">Websocket</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensorNameDropdownFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/empty_small_divider"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/text_sensor_name_dropdown"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_dropdown_sensor_names"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_single_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_sync"
+            android:drawableStart="@drawable/ic_sync"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/text_single_call"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</FrameLayout>
