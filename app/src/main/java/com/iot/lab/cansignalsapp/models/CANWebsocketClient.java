@@ -24,10 +24,12 @@ import java.util.HashMap;
 /**
  * CANWebsocketClient provides a standard implementation for the used websocket.
  * An example implementation how signals are registered is provided {@link #requestAllSignals()}.
- * An example how to parse incoming messages (only there new values) is provided {@link #parseNewValuesOfMessage(String)}.
+ * An example how to parse incoming messages (only new/changed values) is provided {@link #parseNewValuesOfMessage(String)}.
  */
 public abstract class CANWebsocketClient extends WebSocketClient {
     private static String TAG_REQUEST_SIGNALS = "request_signals";
+
+    private boolean WITH_TIMESTAMP = true;
 
     private String[] mSensorNames;
     private HashMap<String, Double> recentValues = new HashMap<>();
@@ -74,6 +76,7 @@ public abstract class CANWebsocketClient extends WebSocketClient {
         JSONObject container = new JSONObject();
         JSONArray signals = new JSONArray();
         try {
+            // request all signals
             for (String name : mSensorNames) {
                 JSONObject tmpSignal = new JSONObject();
                 tmpSignal.put("Name", name);
@@ -81,6 +84,7 @@ public abstract class CANWebsocketClient extends WebSocketClient {
             }
             container.put("signals", signals);
             container.put("samplerate", mSignalRate);
+            container.put("withtimestamp", WITH_TIMESTAMP);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -105,6 +109,13 @@ public abstract class CANWebsocketClient extends WebSocketClient {
         System.err.println("an error occurred:" + ex);
     }
 
+    /**
+     * Takes the websocket message and parses it to return only new values
+     * (value changed in comparison to last available value)
+     *
+     * @param message: String of websocket message
+     * @return HashMap: Only new/changed values with sensor names as key and sensor value as values
+     */
     protected HashMap<String, Double> parseNewValuesOfMessage(String message) {
         HashMap<String, Double> newValues = new HashMap<>();
 

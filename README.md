@@ -85,9 +85,11 @@ Happy coding with the Bosch IoT Lab challenge!
         <td>
             send on onOpen event a message on which signals and on which interval the websocket should receive messages<br \>
             <br \>
-            signals = list of signal names
-            samplerate = interval in ms
-            withtimestamp = boolean if values should have a timestamp when they were last changed
+            signals = list of signal names <br \>
+            <br \>
+            samplerate = interval in ms <br \>
+            <br \>
+            withtimestamp = boolean if values should have a timestamp when the signal was last changed
         </td>
         <td>
             {"signals":["speed", "acceleration", "steering_wheel_angle",...], "samplerate":250, "withtimestamp":true}
@@ -101,18 +103,36 @@ Happy coding with the Bosch IoT Lab challenge!
             The event that receives incoming messages
         </td>
         <td>
-            Without timestamp: {"signals": {"speed":{"value":234.32}, "acceleration":{"value": 21.21}, "steering_wheel_angle":{"value":432,26}, ...}}
+            Without timestamp: {"signals": {"speed":{"value":234.32, "utc":0}, "acceleration":{"value": 21.21, "utc":0}, "steering_wheel_angle":{"value":432,26, "utc":0}, ...}}<br \>
+            <br \>               
+            With timestamp: {"signals": {"speed":{"value":234.32, "utc":1551865379474022000}, "acceleration":{"value": 21.21, "utc":1551865379535070000}, "steering_wheel_angle":{"value":432,26, "utc":1551865379535070000}, ...}}
         </td>
     </tr>
 </table>
 
-##### Biometric sensor
-- Empatica E4 Connect: https://www.empatica.com/connect
+##### Biometric sensors
+Ask our team to borrow the devices!
+###### Empatica E4
+- Empatica E4 Connect (online platform for accessing data): https://www.empatica.com/connect
+- Streaming app from phone to E4 Connect (Android): https://play.google.com/store/apps/details?id=com.empatica.e4realtime
+- Streaming app from phone to E4 Connect (iOS): https://itunes.apple.com/us/app/empatica-e4-realtime/id702791633
+- Ask our team for the credentials!
+###### Firstbeat
+- PC client to read the data from device: https://we.tl/t-cXHvADb4fk
 
 ##### Ideas
-- Health interventions(a more general approach): https://www.youtube.com/watch?v=79Vx3spRFBk
-- The predictive car (an example): https://ieeexplore.ieee.org/abstract/document/7744577
-- Driving capability (a more general approach): https://dl.acm.org/citation.cfm?id=3133939
+###### "The observing car"
+- Volkswagen Connect: https://www.vwconnect.com/driving-style-analysis/
+- Mercedes InScore (only in German): https://www.mercedes-benz-bank.de/content/mbbank/de/produkte/versicherung/telematik-autoversicherung.html
+- A more general approach: https://dl.acm.org/citation.cfm?id=3133939
+###### "The emphatic car"
+- Apple Watch EKG monitor: https://www.youtube.com/watch?v=3cE5kA6XDSY
+- Empatica Embrace 2: https://www.empatica.com/
+- A stress related approach: https://ieeexplore.ieee.org/abstract/document/7744577
+###### "The caretaking car"
+- Tesla Santa Mode as general example: https://www.youtube.com/watch?v=79Vx3spRFBk
+- Mercedes Vivoactive: https://www.garmin.com/en-US/blog/general/garmin-collaborates-with-daimler-to-bring-connected-features-to-mercedes-benz-vehicles-with-the-vivoactive-3-gps-smartwatch/
+- Audi Fit Driver: https://www.quattroworld.com/audi-news/audi-fit-driver/
 
 ### More information about the event:
 - Official START hack website: https://starthack.ch/
