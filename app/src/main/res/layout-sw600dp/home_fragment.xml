@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -48,40 +47,45 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:singleLine="false"
             android:text="@string/text_connection_errors" />
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="@color/colorPrimary" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="488dp"
-            android:layout_weight="1"
-            android:fitsSystemWindows="true"
-            android:paddingTop="8dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="@string/text_information_headline"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="@string/text_information" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_information_headline"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:singleLine="false"
-                    android:text="@string/text_information" />
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/image_start_hack_logo"
                     android:paddingLeft="50dp"
@@ -91,7 +95,8 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/image_iot_lab_logo"
                     android:paddingLeft="30dp"
@@ -99,14 +104,15 @@
                     android:paddingRight="30dp"
                     android:src="@drawable/iot_lab_logo" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web|email"
-                    android:paddingTop="16dp"
-                    android:text="@string/text_website_information" />
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web|email"
+                android:paddingTop="16dp"
+                android:text="@string/text_website_information" />
+        </LinearLayout>
     </LinearLayout>
+
 </FrameLayout>

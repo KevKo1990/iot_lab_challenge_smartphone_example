@@ -114,7 +114,7 @@ public class LogFragment extends Fragment {
         if (mSharedPreferences.getBoolean("debug", false)) {
             mDebugThreadRuns = false;
         } else {
-            if (!mClient.isClosed()) {
+            if (mClient != null && !mClient.isClosed()) {
                 mClient.close();
             }
         }

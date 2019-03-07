@@ -6,11 +6,23 @@ Happy coding with the Bosch IoT Lab challenge!
 
 #### Helpful information to get started
 
+##### Available documentation
+- Pitch presentation: https://www.iot-lab.ch/wp-content/uploads/2019/03/START-Hack-pitch.pdf
+- Workshop presentation: https://www.iot-lab.ch/wp-content/uploads/2019/03/START-Hack-workshop.pdf
+- Documentation for all signals: https://www.iot-lab.ch/wp-content/uploads/2019/03/START-Hack-available-signals.pdf
+
 ##### Config
 - In assets/config.json is the IP address of the ALEN box specified
 
+##### Technical information
+- IP address of webserver in all provided networks: 192.168.8.10
+- WLAN Car: SSID HUAWEI-2D17 Password: Wa1z3gouvASQ5!
+- WLAN Car simulation / CANalyzer: SSID FRITZ!Box 7490 Bosch IoT Password: 98871595452296495993
+- FTP storage: ask our team!
+- Empatica E4 connect portal: ask our team!
+
 ##### REST queries
-- REST queries are done with the Volley library: https://developer.android.com/training/volley/
+- REST queries are done with the Google Volley library: https://developer.android.com/training/volley/
 - Example queries are in MainActivity, GraphFragment, CANWebsocketClient, and SensorNameDropdownFragment
 
 ###### REST queries
@@ -116,11 +128,12 @@ Ask our team to borrow the devices!
 - Empatica E4 Connect (online platform for accessing data): https://www.empatica.com/connect
 - Streaming app from phone to E4 Connect (Android): https://play.google.com/store/apps/details?id=com.empatica.e4realtime
 - Streaming app from phone to E4 Connect (iOS): https://itunes.apple.com/us/app/empatica-e4-realtime/id702791633
-- Ask our team for the credentials!
+- Signals in detail: http://box.empatica.com/documentation/20141119_E4_TechSpecs.pdf
 ###### Firstbeat
 - PC client to read the data from device: https://we.tl/t-cXHvADb4fk
-
+- Signals in detail: https://www.iot-lab.ch/wp-content/uploads/2019/03/Firstbeat-SPORTS-Physiological-and-GPS-variables.pdf
 ##### Ideas
+- The car interior of the future: https://www.youtube.com/watch?v=iSVt5Ja0ZCk
 ###### "The observing car"
 - Volkswagen Connect: https://www.vwconnect.com/driving-style-analysis/
 - Mercedes InScore (only in German): https://www.mercedes-benz-bank.de/content/mbbank/de/produkte/versicherung/telematik-autoversicherung.html

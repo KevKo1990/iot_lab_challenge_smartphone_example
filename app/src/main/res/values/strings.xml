@@ -21,14 +21,15 @@
     <string name="alen_box">ALEN</string>
     <string name="connection_status">Connection status</string>
     <string name="text_connection_errors">
-        If the phone is not able to connect to the box, you can try: \n
-        a) Check if you are connected with the same WiFi as the box \n
-        b) Restart the box, maybe is the web server crashed \n
-        c) Ask us
+        The connection to the ALEN webserver is checked continuously.
+        \n<b>Notice</b>: The ALEN box starts only if the on-board voltage is switched on, so you have to wait a second.
+        \n\nIf the phone is not able to connect to the box, you can try: \n
+        a) Check if this device is connected with the same Wi-Fi as the box \n
+        b) Restart the box as potentially the webserver has crashed \n
+        c) Ask us!
     </string>
     <string name="text_information">
-        This app is especially written for the START Hack 2019 in St. Gallen.
-        \nIt shows examples for the usage of the ALEN REST API and websocket connections. Open the menu to check both out!
+        This app is especially written for the START Hack 2019 in St. Gallen. It shows examples for the usage of the ALEN REST API and websocket connections. Open the menu to check both out!
         \n\nHappy coding with the Bosch IoT Lab challenge!
     </string>
 
