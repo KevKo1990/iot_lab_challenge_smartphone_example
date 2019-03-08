@@ -20,7 +20,7 @@ Happy coding with the Bosch IoT Lab challenge!
 |--------------------|--------------------|--------------------------|
 | REST/WS IP-Address | 192.168.8.10       | 130.82.239.210           |
 | MQTT Broker        | 82.165.25.152:1883 | 82.165.25.152:1884       |
-| SSID               | HUAWEI-2D17        | FRITZ!Box 7490 Bosch IoT |
+| SSID               | HUAWEI-2D17        | STARTHack2019 |
 | WLAN Password      | Wa1z3gouvASQ5!     | 98871595452296495993     |
 | FTP Server         | 82.165.25.152      | 82.165.25.152            |
 | FTP User           | ftp_read           | ftp_read                 |
