@@ -22,9 +22,9 @@ Happy coding with the Bosch IoT Lab challenge!
 | MQTT Broker        | 82.165.25.152:1883 | 82.165.25.152:1884       |
 | SSID               | HUAWEI-2D17        | STARTHack2019 |
 | WLAN Password      | Wa1z3gouvASQ5!     | STARTgoescoding     |
-| FTP Server         | 82.165.25.152      | 82.165.25.152            |
-| FTP User           | ftp_read           | -                 |
-| FTP Password           | ftp_read    | -                 |
+| SFTP Server (Port 21)         | 82.165.25.152      | 82.165.25.152            |
+| SFTP User           | ftp_read           | -                 |
+| SFTP Password           | ftp_read    | -                 |
 - Empatica E4 connect portal: ask our team!
 
 ##### REST queries
