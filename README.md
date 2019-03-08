@@ -18,7 +18,7 @@ Happy coding with the Bosch IoT Lab challenge!
 
 |                    | Car                | Simulation               |
 |--------------------|--------------------|--------------------------|
-| REST/WS IP-Address | 192.168.8.10       | 192.168.8.10             |
+| REST/WS IP-Address | 192.168.8.10       | 130.82.239.210           |
 | MQTT Broker        | 82.165.25.152:1883 | 82.165.25.152:1884       |
 | SSID               | HUAWEI-2D17        | FRITZ!Box 7490 Bosch IoT |
 | WLAN Password      | Wa1z3gouvASQ5!     | 98871595452296495993     |
