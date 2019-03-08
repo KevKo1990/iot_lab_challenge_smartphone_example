@@ -24,7 +24,7 @@ Happy coding with the Bosch IoT Lab challenge!
 | WLAN Password      | Wa1z3gouvASQ5!     | STARTgoescoding     |
 | FTP Server         | 82.165.25.152      | 82.165.25.152            |
 | FTP User           | ftp_read           | -                 |
-| FTP Password           | R3jdLlxoL29    | -                 |
+| FTP Password           | ftp_read    | -                 |
 - Empatica E4 connect portal: ask our team!
 
 ##### REST queries
