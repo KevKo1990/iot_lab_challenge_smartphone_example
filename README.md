@@ -15,10 +15,15 @@ Happy coding with the Bosch IoT Lab challenge!
 - In assets/config.json is the IP address of the ALEN box specified
 
 ##### Technical information
-- IP address of webserver in all provided networks: 192.168.8.10
-- WLAN Car: SSID HUAWEI-2D17 Password: Wa1z3gouvASQ5!
-- WLAN Car simulation / CANalyzer: SSID FRITZ!Box 7490 Bosch IoT Password: 98871595452296495993
-- FTP storage: ask our team!
+
+|                    | Car                | Simulation               |
+|--------------------|--------------------|--------------------------|
+| REST/WS IP-Address | 192.168.8.10       | 192.168.8.10             |
+| MQTT Broker        | 82.165.25.152:1883 | 82.165.25.152:1884       |
+| SSID               | HUAWEI-2D17        | FRITZ!Box 7490 Bosch IoT |
+| WLAN Password      | Wa1z3gouvASQ5!     | 98871595452296495993     |
+| FTP Server         | 82.165.25.152      | 82.165.25.152            |
+| FTP User           | ftp_read           | ftp_read                 |
 - Empatica E4 connect portal: ask our team!
 
 ##### REST queries
