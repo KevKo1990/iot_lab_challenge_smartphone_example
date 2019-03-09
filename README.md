@@ -21,7 +21,7 @@ Happy coding with the Bosch IoT Lab challenge!
 | REST/WS IP-Address | 192.168.8.10       | 130.82.239.210           |
 | MQTT Broker        | 82.165.25.152:1883 | 82.165.25.152:1884       |
 | SSID               | HUAWEI-2D17        | STARTHack2019 |
-| WLAN Password      | Wa1z3gouvASQ5!     | STARTgoescoding     |
+| WLAN Password      | Wa1z3gouASQ5!     | STARTgoescoding     |
 | SFTP Server (Port 22)         | 82.165.25.152      | 82.165.25.152            |
 | SFTP User           | ftp_read           | -                 |
 | SFTP Password           | ftp_read    | -                 |
