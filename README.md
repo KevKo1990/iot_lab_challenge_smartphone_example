@@ -84,7 +84,7 @@ Happy coding with the Bosch IoT Lab challenge!
 ##### Websocket
 - Websocket connection is established with the Java WebSocket library: https://github.com/TooTallNate/Java-WebSocket
 - Example implementations are the CANWebsocketClient and in LogFragment the CANDataClient class.
-- <IP>/ws to open the Websocket
+- IP_Adress/ws to open the Websocket
 
 ###### Websocket events
 <table>
